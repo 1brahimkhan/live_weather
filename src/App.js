@@ -31,7 +31,7 @@ function App(props) {
   const [se, setSearch] = useState('mumbai');
 
   useEffect(() => {
-    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=e57c938000904073999113539211309 &q=${se}&days=5&aqi=no&alerts=no`)
+    axios.get(`https://api.weatherapi.com/v1/forecast.json?key=e57c938000904073999113539211309 &q=${se}&days=5&aqi=no&alerts=no`)
       .then(res => {
         // console.log(res.data)
         const { name } = res.data.location;

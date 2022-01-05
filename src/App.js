@@ -28,7 +28,7 @@ function App(props) {
   //             console.log(err)
   //         })
   // }, [])
-  const [se, setSearch] = useState('mumbai');
+  const [se, setSearch] = useState('pune');
 
   useEffect(() => {
     axios.get(`https://api.weatherapi.com/v1/forecast.json?key=e57c938000904073999113539211309 &q=${se}&days=5&aqi=no&alerts=no`)
